@@ -1,5 +1,6 @@
 # dotenvelope
 
+[![CI](https://github.com/qianbrady/dotenvelope/actions/workflows/ci.yml/badge.svg)](https://github.com/qianbrady/dotenvelope/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 > Check your `.env.example` against what your code *actually reads* — undocumented, zombie, and no-default variables in one pass.
 
 纯标准库（Python ≥ 3.10）的环境变量审计器：比对 `.env.example` ↔ 代码实际读取 ↔ 运行时默认值兜底，输出**缺文档变量 / 僵尸变量 / 默认值缺失风险**三类清单与 0-100 健康分。支持 Python 与 Node 项目。
