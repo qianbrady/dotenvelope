@@ -117,3 +117,26 @@ python -m unittest discover -s tests -q
 ## 许可
 
 MIT © 2025 ox-alpha。详见 [LICENSE](LICENSE)。
+
+## Quickstart
+
+1. `git clone https://github.com/qianbrady/dotenvelope`
+2. `pip install -e .`
+3. Run `python -m dotenvelope --help` - full usage on screen
+
+## Usage
+
+```text
+$ python -m dotenvelope --help
+usage: dotenvelope [-h] [--version] {audit,sync} ...
+比对 .env.example 与代码实际读取的环境变量: 缺文档 / 僵尸 / 默认值缺失 + 健康分 0-100。
+positional arguments:
+  {audit,sync}
+    audit       审计项目: 三类问题清单 + 健康分
+    sync        把代码里缺文档的变量补进 .env.example
+options:
+```
+
+## Contributing
+
+Issues and PRs welcome - run `pytest` locally before submitting.
